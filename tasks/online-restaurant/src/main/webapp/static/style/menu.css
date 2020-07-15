@@ -1,0 +1,10 @@
+.redirect-link {
+    font-size: 300%;
+    margin-left: 20%;
+    color: #ff3c15;
+    font-weight: bold;
+}
+
+.redirect-link:hover {
+    color: rgba(140, 39, 15, 0.92);
+}

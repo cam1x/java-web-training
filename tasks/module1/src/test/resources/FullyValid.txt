@@ -1,0 +1,4 @@
+type: compartment, passenger:50, luggage: 19, coupe: 17
+type: restaurant, passenger:50, luggage: 19, table: 17
+type: compartment, passenger:50, luggage: 19, coupe: 117
+type: restaurant, passenger:50, luggage: 19, table: 10

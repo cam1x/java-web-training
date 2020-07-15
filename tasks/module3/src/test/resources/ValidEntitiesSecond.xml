@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<banks>
+    <metal id="2">
+        <name>ICBC</name>
+        <country>China</country>
+        <depositor>Pavel</depositor>
+        <profitability>15</profitability>
+        <amountOnDeposit unit="gram" preciousMetal="gold">289</amountOnDeposit>
+        <timeConstraints unit="year">5</timeConstraints>
+    </metal>
+    <demand id="1">
+        <name>BPS Sberbank</name>
+        <country>Belarus</country>
+        <depositor>Maxim</depositor>
+        <profitability>10</profitability>
+        <amountOnDeposit unit="USD">2000</amountOnDeposit>
+    </demand>
+    <savings id="3">
+        <name>BNP Pariba</name>
+        <country>England</country>
+        <depositor>Mark</depositor>
+        <profitability>7</profitability>
+        <amountOnDeposit unit="GBP">5890</amountOnDeposit>
+        <timeConstraints unit="year">3</timeConstraints>
+    </savings>
+    <rated id="4">
+        <name>BoA</name>
+        <country>USA</country>
+        <depositor>John</depositor>
+        <profitability>18</profitability>
+        <amountOnDeposit unit="USD">15900</amountOnDeposit>
+        <timeConstraints unit="month">28</timeConstraints>
+        <maxNumOfWithdrawal>10</maxNumOfWithdrawal>
+        <maxNumOfReplenish>7</maxNumOfReplenish>
+    </rated>
+    <savings id="20">
+        <name>Dream Bank</name>
+        <country>Germany</country>
+        <depositor>Mario</depositor>
+        <profitability>21</profitability>
+        <amountOnDeposit unit="EUR">3900</amountOnDeposit>
+        <timeConstraints unit="month">24</timeConstraints>
+    </savings>
+    <funded id="56">
+        <name>Crédit Agricole</name>
+        <country>France</country>
+        <depositor>Frank</depositor>
+        <profitability>8</profitability>
+        <amountOnDeposit unit="EUR">28900</amountOnDeposit>
+        <timeConstraints unit="year">7</timeConstraints>
+        <maxNumOfReplenish>7</maxNumOfReplenish>
+    </funded>
+    <demand id="11">
+        <name>National Bank of Belarus</name>
+        <country>Russia</country>
+        <depositor>Artem</depositor>
+        <profitability>17</profitability>
+        <amountOnDeposit unit="EUR">20020</amountOnDeposit>
+    </demand>
+    <metal id="18">
+        <name>National Bank of Russia</name>
+        <country>Russia</country>
+        <depositor>Roma</depositor>
+        <profitability>13</profitability>
+        <amountOnDeposit unit="kilogram" preciousMetal="silver">189</amountOnDeposit>
+        <timeConstraints unit="day">280</timeConstraints>
+    </metal>
+    <rated id="25">
+        <name>New Bank Of USA</name>
+        <country>USA</country>
+        <depositor>Thomas</depositor>
+        <profitability>10</profitability>
+        <amountOnDeposit unit="USD">189021</amountOnDeposit>
+        <timeConstraints unit="year">7</timeConstraints>
+        <maxNumOfWithdrawal>7</maxNumOfWithdrawal>
+        <maxNumOfReplenish>3</maxNumOfReplenish>
+    </rated>
+    <funded id="27">
+        <name>Student Bank</name>
+        <country>Italy</country>
+        <depositor>Leonardo</depositor>
+        <profitability>14</profitability>
+        <amountOnDeposit unit="EUR">15000</amountOnDeposit>
+        <timeConstraints unit="year">2</timeConstraints>
+        <maxNumOfReplenish>3</maxNumOfReplenish>
+    </funded>
+    <demand id="31">
+        <name>National Bank of Spain</name>
+        <country>Spain</country>
+        <depositor>Luigi</depositor>
+        <profitability>13</profitability>
+        <amountOnDeposit unit="EUR">100900</amountOnDeposit>
+    </demand>
+    <metal id="32">
+        <name>Sberbank</name>
+        <country>Russia</country>
+        <depositor>Alex</depositor>
+        <profitability>11</profitability>
+        <amountOnDeposit unit="gram" preciousMetal="bronze">590</amountOnDeposit>
+        <timeConstraints unit="day">300</timeConstraints>
+    </metal>
+    <savings id="33">
+        <name>National Bank of USA</name>
+        <country>USA</country>
+        <depositor>Barak</depositor>
+        <profitability>25</profitability>
+        <amountOnDeposit unit="USD">8900800</amountOnDeposit>
+        <timeConstraints unit="year">4</timeConstraints>
+    </savings>
+    <rated id="34">
+        <name>Dream Bank</name>
+        <country>Poland</country>
+        <depositor>Pavel</depositor>
+        <profitability>11</profitability>
+        <amountOnDeposit unit="ZLT">500000</amountOnDeposit>
+        <timeConstraints unit="year">2</timeConstraints>
+        <maxNumOfWithdrawal>3</maxNumOfWithdrawal>
+        <maxNumOfReplenish>2</maxNumOfReplenish>
+    </rated>
+    <funded id="35">
+        <name>Federal Bank</name>
+        <country>Russia</country>
+        <depositor>Vladimir</depositor>
+        <profitability>18</profitability>
+        <amountOnDeposit unit="RUB">10000000</amountOnDeposit>
+        <timeConstraints unit="year">4</timeConstraints>
+        <maxNumOfReplenish>15</maxNumOfReplenish>
+    </funded>
+    <rated id="44">
+        <name>Bank of Future</name>
+        <country>USA</country>
+        <depositor>Anthony</depositor>
+        <profitability>7</profitability>
+        <amountOnDeposit unit="EUR">32130</amountOnDeposit>
+        <timeConstraints unit="month">72</timeConstraints>
+        <maxNumOfWithdrawal>9</maxNumOfWithdrawal>
+        <maxNumOfReplenish>4</maxNumOfReplenish>
+    </rated>
+</banks>

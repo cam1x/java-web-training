@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<banks>
+    <demand id="1">
+        <name>BPS Sberbank</name>
+        <country>Belarus</country>
+        <depositor>Maxim</depositor>
+        <profitability>10</profitability>
+        <amountOnDeposit unit="USD">2000</amountOnDeposit>
+    </demand>
+    <metal id="2">
+        <name>ICBC</name>
+        <country>China</country>
+        <depositor>Pavel</depositor>
+        <profitability>15</profitability>
+        <amountOnDeposit unit="gram" preciousMetal="gold">289</amountOnDeposit>
+        <timeConstraints unit="year">5</timeConstraints>
+    </metal>
+    <savings id="3">
+        <name>BNP Pariba</name>
+        <country>England</country>
+        <depositor>Mark</depositor>
+        <profitability>7</profitability>
+        <amountOnDeposit unit="GBP">5890</amountOnDeposit>
+        <timeConstraints unit="year">3</timeConstraints>
+    </savings>
+    <rated id="4">
+        <name>BoA</name>
+        <country>USA</country>
+        <depositor>John</depositor>
+        <profitability>18</profitability>
+        <amountOnDeposit unit="USD">15900</amountOnDeposit>
+        <timeConstraints unit="month">28</timeConstraints>
+        <maxNumOfWithdrawal>10</maxNumOfWithdrawal>
+        <maxNumOfReplenish>7</maxNumOfReplenish>
+    </rated>
+    <funded id="56">
+        <name>Crédit Agricole</name>
+        <country>France</country>
+        <depositor>Frank</depositor>
+        <profitability>8</profitability>
+        <amountOnDeposit unit="EUR">28900</amountOnDeposit>
+        <timeConstraints unit="year">7</timeConstraints>
+        <maxNumOfReplenish>7</maxNumOfReplenish>
+    </funded>
+</banks>

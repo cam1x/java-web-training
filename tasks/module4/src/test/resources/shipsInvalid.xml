@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ships>
+    <ship type="passenger" name="Aurora">
+        <capacity>1000</capacity>
+        <currCongestion>580</currCongestion>
+        <operationType>loading</operationType>
+    </ship>
+    <ship type="container" name="Dream 1">
+        <capacity>5000</capacity>
+        <currCongestion>2800</currCongestion>
+        <operationType>unloading</operationType>
+    </ship>
+    <ship type="myType" name="Victory">
+        <capacity>2859</capacity>
+        <operationType>myOperation</operationType>
+    </ship>
+</ships>

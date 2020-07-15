@@ -1,0 +1,8 @@
+
+type: compartment, passenger:50, luggage: 19, coupe: 7, myImagination : 48
+type: ultra, passenger:50, luggage: 119, table: 79
+type: compartment
+pAssEngER: 17, luggage: 13,type: PREMIUM, tV: 19, conditioner: 31
+
+type: restaurant, passenger:50
+type: premium, tv: -19, conditioner: number, passenger: 0, luggage: -13

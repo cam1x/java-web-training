@@ -1,0 +1,53 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:simpleType name="timeUnitType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="days"/>
+            <xs:enumeration value="hours"/>
+            <xs:enumeration value="microseconds"/>
+            <xs:enumeration value="milliseconds"/>
+            <xs:enumeration value="minutes"/>
+            <xs:enumeration value="nanoseconds"/>
+            <xs:enumeration value="seconds"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="berthsType">
+            <xs:sequence>
+                <xs:element name="berth" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:simpleContent>
+                            <xs:extension base="xs:string">
+                                <xs:attribute type="xs:string" name="name" use="required"/>
+                            </xs:extension>
+                        </xs:simpleContent>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+    </xs:complexType>
+
+    <xs:element name="pool">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="port">
+                    <xs:complexType>
+                        <xs:choice maxOccurs="unbounded">
+                            <xs:element type="xs:long" name="capacity"/>
+                            <xs:element type="xs:long" name="currCongestion"/>
+                            <xs:element name="timeOutLimit">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:long">
+                                            <xs:attribute type="timeUnitType" name="unit" use="required"/>
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element type="berthsType" name="berths"/>
+                        </xs:choice>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

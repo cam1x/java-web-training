@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ships>
+    <ship type="passenger" name="Aurora">
+        <capacity>1000</capacity>
+        <currCongestion>580</currCongestion>
+        <operationType>load</operationType>
+    </ship>
+    <ship type="container" name="Dream 1">
+        <capacity>5000</capacity>
+        <currCongestion>2800</currCongestion>
+        <operationType>unload</operationType>
+    </ship>
+    <ship type="bulk" name="Victory">
+        <capacity>2859</capacity>
+        <currCongestion>1700</currCongestion>
+        <operationType>load</operationType>
+    </ship>
+    <ship type="tanker" name="Winter">
+        <currCongestion>1750</currCongestion>
+        <capacity>3000</capacity>
+        <operationType>load</operationType>
+    </ship>
+    <ship type="naval" name="Woolf">
+        <capacity>7500</capacity>
+        <currCongestion>2800</currCongestion>
+        <operationType>unload</operationType>
+    </ship>
+    <ship type="special_purpose" name="Arrow">
+        <capacity>6000</capacity>
+        <currCongestion>1205</currCongestion>
+        <operationType>load</operationType>
+    </ship>
+    <ship type="offshore" name="Terror">
+        <capacity>2480</capacity>
+        <currCongestion>1700</currCongestion>
+        <operationType>unload</operationType>
+    </ship>
+</ships>

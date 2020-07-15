@@ -1,0 +1,8 @@
+type: compartment, passenger:50, luggage: 19, coupe: 7
+type: restaurant, passenger:50:19, luggage: 119, table: 79
+type: compartment, passenger:, luggage: 41, coupe: 117
+type: restaurant, passenger:50, luggage: -19, table: 10
+type: premium, tv: 19, conditioner: 31, passenger: 17, luggage: 13
+
+type: restaurant, passenger:50
+type: premium, tv: 19, conditioner: number, passenger: 17, luggage: 13

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<banks>
+    <savings id="3.8">
+        <name>BNP Pariba</name>
+        <country>England</country>
+        <depositor>Mark</depositor>
+        <amountOnDeposit unit="GBP">my money value</amountOnDeposit>
+        <profitability>7</profitability>
+        <timeConstraints unit="year">one</timeConstraints>
+    </savings>
+</banks>

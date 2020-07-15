@@ -1,0 +1,60 @@
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 200px;
+}
+
+.mdl-card__media {
+    background-color: #333333;
+}
+
+.mdl-card {
+    min-height: auto;
+    max-height: 380px;
+    text-align: center;
+    background-color: #333333;
+}
+
+.mdl-card__title{
+    text-align: center;
+}
+
+.mdl-card__title-text {
+    text-align: center;
+    color: #feff35;
+    font-weight: bold;
+    font-size: 120%;
+    width: 100%;
+}
+
+.mdl-card__supporting-text {
+    color: #e0f2f1;
+}
+
+.mdl-button--colored {
+    color: #00acc1;
+}
+
+.mdl-card__supporting-text {
+    font-style: italic;
+}
+
+.fixed-btn {
+    position: fixed;
+    /*TODO*/
+    background-color: #4f3092;
+    color: #dafff3;
+}
+
+.inline-tittle-text {
+    font-size: 110%;
+    color: #0d47a1;
+}
+
+.inline-content-text {
+    font-size: 100%;
+    color: #8c9eff;
+    font-style: italic;
+}

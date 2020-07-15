@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pool>
+    <port>
+        <capacity>15000</capacity>
+        <currCongestion>6000</currCongestion>
+        <timeOutLimit unit="milliseconds">100</timeOutLimit>
+        <berths>
+            <berth name="Berths 1"/>
+            <berth name="Berths 2"/>
+            <berth name="Berths 3"/>
+        </berths>
+    </port>
+</pool>

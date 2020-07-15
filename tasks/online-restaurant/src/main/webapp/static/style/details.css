@@ -1,0 +1,20 @@
+.details-img {
+    min-width: 200px;
+    max-width: 500px;
+    min-height: 500px;
+    max-height: 650px;
+}
+
+.header-text {
+    text-align: center;
+    font-size: 300%;
+    font-weight: bolder;
+    color: #4b6be1;
+    text-decoration: underline;
+}
+
+.header-content {
+    font-style: italic;
+    font-size: 150%;
+    color: #90a4ae;
+}

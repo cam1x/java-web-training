@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<banks>
+    <demand id="1">
+        <name>BPS Sberbank</name>
+        <country>Belarus</country>
+        <depositor>Maxim</depositor>
+        <amountOnDeposit unit="USD">2000</amountOnDeposit>
+        <profitability>10</profitability>
+        <myOwnTag>1000</myOwnTag>
+    </demand>
+</banks>

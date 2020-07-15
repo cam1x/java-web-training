@@ -1,0 +1,30 @@
+.mdl-card {
+    min-height: unset;
+}
+
+.wallet-card {
+    background-color: #212121;
+    height: 140px;
+    width: 230px;
+}
+
+.mdl-card__title {
+    display: inline-block;
+    text-align: center;
+}
+
+.history-link {
+    border: 1px solid #fff;
+    padding: 10px 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 20px;
+    display: inline-block;
+    color: #fff;
+}
+
+.history-link:hover {
+    background: #fff;
+    color: #333;
+}

@@ -1,0 +1,137 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:simpleType name="timeUnit">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="day"/>
+            <xs:enumeration value="month"/>
+            <xs:enumeration value="year"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- Contains a narrowed set of abstract deposit element properties
+    Additional abstract element added cause metal deposit, unlike other deposits,
+     has additional attribute in AmountOnDeposit element.
+     In this way, metal deposit was created not from scratch, but to the next part of the properties,
+     which all deposits have -->
+    <xs:complexType name="basicDeposit" abstract="true">
+        <xs:sequence>
+            <xs:element type="xs:string" name="name"/>
+            <xs:element type="xs:string" name="country"/>
+            <xs:element type="xs:string" name="depositor"/>
+            <xs:element type="xs:double" name="profitability"/>
+        </xs:sequence>
+        <xs:attribute type="xs:long" use="required" name="id"/>
+    </xs:complexType>
+
+    <!-- Abstract deposit element which contains basic properties -->
+    <xs:complexType name="deposit" abstract="true">
+        <xs:complexContent>
+            <xs:extension base="basicDeposit">
+                <xs:sequence>
+                    <xs:element name="amountOnDeposit">
+                        <xs:complexType>
+                            <xs:simpleContent>
+                                <xs:extension base="xs:double">
+                                    <xs:attribute type="xs:string" default="USD" name="unit"/>
+                                </xs:extension>
+                            </xs:simpleContent>
+                        </xs:complexType>
+                    </xs:element>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <!-- Abstract term deposit element -->
+    <xs:complexType name="termDeposit" abstract="true">
+        <xs:complexContent>
+            <xs:extension base="deposit">
+                <xs:sequence>
+                    <xs:element name="timeConstraints">
+                        <xs:complexType>
+                            <xs:simpleContent>
+                                <xs:extension base="xs:long">
+                                    <xs:attribute type="timeUnit" default="month" name="unit"/>
+                                </xs:extension>
+                            </xs:simpleContent>
+                        </xs:complexType>
+                    </xs:element>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <xs:complexType name="demandType">
+        <xs:complexContent>
+            <xs:extension base="deposit"/>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <xs:complexType name="savingsType">
+        <xs:complexContent>
+            <xs:extension base="termDeposit"/>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <xs:complexType name="ratedType">
+        <xs:complexContent>
+            <xs:extension base="termDeposit">
+                <xs:sequence>
+                    <xs:element type="xs:int" name="maxNumOfWithdrawal"/>
+                    <xs:element type="xs:int" name="maxNumOfReplenish"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <xs:complexType name="fundedType">
+        <xs:complexContent>
+            <xs:extension base="termDeposit">
+                <xs:sequence>
+                    <xs:element type="xs:int" name="maxNumOfReplenish"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+
+    <xs:complexType name="metalType">
+        <xs:complexContent>
+            <xs:extension base="basicDeposit">
+                <xs:sequence>
+                    <xs:element name="amountOnDeposit">
+                        <xs:complexType>
+                            <xs:simpleContent>
+                                <xs:extension base="xs:double">
+                                    <xs:attribute type="xs:string" default="gram" name="unit"/>
+                                    <xs:attribute type="xs:string" default="gold" name="preciousMetal"/>
+                                </xs:extension>
+                            </xs:simpleContent>
+                        </xs:complexType>
+                    </xs:element>
+                    <xs:element name="timeConstraints">
+                        <xs:complexType>
+                            <xs:simpleContent>
+                                <xs:extension base="xs:long">
+                                    <xs:attribute type="timeUnit" default="month" name="unit"/>
+                                </xs:extension>
+                            </xs:simpleContent>
+                        </xs:complexType>
+                    </xs:element>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <xs:element name="banks">
+        <xs:complexType>
+            <xs:choice maxOccurs="unbounded">
+                <xs:element name="demand" type="demandType"/>
+                <xs:element name="funded" type="fundedType"/>
+                <xs:element name="metal" type="metalType"/>
+                <xs:element name="savings" type="savingsType"/>
+                <xs:element name="rated" type="ratedType"/>
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

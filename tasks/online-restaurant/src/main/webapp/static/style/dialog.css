@@ -1,0 +1,56 @@
+.mdl-button {
+    color: #d6e9a6;
+}
+
+.mdl-dialog {
+    background-color: #373737;
+}
+
+.mdl-dialog__title {
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+
+.mdl-list__item-primary-content {
+    color: #E2E3D7;
+}
+
+.mdl-textfield__label{
+    color: #E2E3D7;
+}
+
+.mdl-textfield__input{
+    border-bottom-color: #848484;
+}
+
+.upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.upload-button {
+    margin: auto;
+    width: 100%;
+    border: 2px solid gray;
+    color: gray;
+    background-color: white;
+    padding: 8px 20px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.upload-btn-wrapper input[type="file"] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+
+.mdl-textfield input[type="text"], textarea {
+    color: #9fa8da;
+}
+

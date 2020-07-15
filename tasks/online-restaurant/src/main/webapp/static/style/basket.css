@@ -1,0 +1,66 @@
+.block-header {
+    font-size: 300%;
+    margin-left: 35%;
+    font-weight: bold;
+    color: green;
+}
+
+.inline-tittle-text {
+    text-align: center;
+    font-size: 200%;
+    color: #2a801c;
+}
+
+.inline-content-text {
+    font-size: 150%;
+    color: #ff4222;
+}
+
+.confirm-button {
+    width: 100%;
+    border: none;
+    outline: none;
+    height: 34px;
+    background: #fb2525;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.confirm-button:hover {
+    cursor: pointer;
+    background: #ffc107;
+    color: #000;
+}
+
+.wallet-selection {
+    background-color: rgba(63, 74, 79, 0.94);
+    width: 120px;
+    height: 50px;
+    border: none;
+    font-size: 70%;
+    color: #67a6ed;
+}
+
+.wallet-selection option {
+    color: #212121;
+}
+
+.error-text {
+    color: #ff0015;
+    font-weight: bold;
+}
+
+.block-wrapper {
+    border: 1px solid #777777;
+}
+
+.date-chooser {
+    border: none;
+    background: transparent;
+    outline: none;
+    height: 26px;
+    color: #fff;
+    font-size: 16px;
+    margin-top: 28%;
+}
