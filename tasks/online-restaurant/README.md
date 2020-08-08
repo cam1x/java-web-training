@@ -1,18 +1,25 @@
 ### Online restaurant
 
 # Concept
-The main idea of the project is to create an application that allows you to pre-order dishes from the restaurant’s menu with special wishes, order dates, etc.
+The main idea of the project is to create an application that allows you to pre-order dishes from the restaurantâ€™s menu with special wishes, order dates, etc.
 
-# Functional
-* place orders of dishes with the ability to choose the number of servings and the wallet for payment.
-* have multiple wallets, contacts.
-* edit wallets, contacts.
-* avatar change
-* view and edit order history.
-* change interface language.
-* (only manager)create dishes and edit existing ones.
-* (only manager)view orders of all users.
-* (only manager)change order status.
-* (only manager)discount percentage change.
-* (only admin)delete, block / unlock, change user roles.
-* (only admin)view all users.
+# Features
+Available functionality, like appearance, applications depend on the user's role (user, manager, admin). Implemented an analogue of Spring DI, AOP (transactions). A number of design patterns are implemented in the project (Singelton, Proxy, Factory and etc.)
+
+# User functionality:
+* placing orders of dishes with the ability of choosing the number of servings and the wallet for payment.
+* having multiple wallets, contacts.
+* editing wallets, contacts.
+* changing avatar
+* viewing and editing order history.
+* changing interface language.
+
+# Manager functionality:
+* creating dishes and editing existing ones.
+* viewing orders of all users.
+* changing order status.
+* changing user's discount percentage.
+
+# Admin fucntionality:
+* editing, blocking/unlocking, changing user roles.
+* viewing all users.
